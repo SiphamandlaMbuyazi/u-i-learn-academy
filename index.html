@@ -14,10 +14,42 @@
   <link href="logo.png" rel="apple-touch-icon">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- ===== Link Swiper's CSS ===== -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <!-- ===== Fontawesome CDN Link ===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+      
+  <!-- ===== CSS ===== -->
+  <link rel="stylesheet" href="style.css">
   <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
+    <nav>
+        <div class="nav-content">
+          <div class="logo">
+            <img src="logo.png" alt="logo" width="50px" height="50px" style="border-radius: 10px;">
+           
+          </div>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#About-Us">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <script>
+            let nav = document.querySelector("nav");
+              window.onscroll = function() {
+                if(document.documentElement.scrollTop > 20){
+                  nav.classList.add("sticky");
+                }else {
+                  nav.classList.remove("sticky");
+                }
+              }
+            </script>
+      </nav>
     <section class="About-Us">
             <div class="hero">
               <h2>Empowering Students to Excel</h2>
@@ -71,11 +103,283 @@
           </div>
 
    
-   
+          <section id="something">
+    
+            <div class="swiper mySwiper container">
+              <div class="swiper-wrapper content">
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                     <img src="Screenshot 2024-03-20 232751.png" alt=""> 
+                    </div>
+                    <div class="media-icons">
+                      <i class="fab fa-facebook"></i>
+                      <i class="fab fa-twitter"></i>
+                      <i class="fab fa-github"></i>
+                    </div>
+                    <div class="name-profession">
+                      <span class="name">Someone Name</span>
+                      <span class="profession">Web Developer</span>
+                    </div>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="button">
+                      <button class="aboutMe">About Me</button>
+                      <button class="hireMe">Hire Me</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="Screenshot 2024-03-20 232751.png" alt=""> 
+                    </div>
+                    <div class="media-icons">
+                      <i class="fab fa-facebook"></i>
+                      <i class="fab fa-twitter"></i>
+                      <i class="fab fa-github"></i>
+                    </div>
+                    <div class="name-profession">
+                      <span class="name">Someone Name</span>
+                      <span class="profession">Web Developer</span>
+                    </div>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="button">
+                      <button class="aboutMe">About Me</button>
+                      <button class="hireMe">Hire Me</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                   <img src="Screenshot 2024-03-20 232751.png" alt=""> 
+                    </div>
+                    <div class="media-icons">
+                      <i class="fab fa-facebook"></i>
+                      <i class="fab fa-twitter"></i>
+                      <i class="fab fa-github"></i>
+                    </div>
+                    <div class="name-profession">
+                      <span class="name">Someone Name</span>
+                      <span class="profession">Web Developer</span>
+                    </div>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="button">
+                      <button class="aboutMe">About Me</button>
+                      <button class="hireMe">Hire Me</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                    <img src="Screenshot 2024-03-20 232751.png" alt=""> 
+                    </div>
+                    <div class="media-icons">
+                      <i class="fab fa-facebook"></i>
+                      <i class="fab fa-twitter"></i>
+                      <i class="fab fa-github"></i>
+                    </div>
+                    <div class="name-profession">
+                      <span class="name">Someone Name</span>
+                      <span class="profession">Web Developer</span>
+                    </div>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="button">
+                      <button class="aboutMe">About Me</button>
+                      <button class="hireMe">Hire Me</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="Screenshot 2024-03-20 232751.png" alt=""> 
+                    </div>
+                    <div class="media-icons">
+                      <i class="fab fa-facebook"></i>
+                      <i class="fab fa-twitter"></i>
+                      <i class="fab fa-github"></i>
+                    </div>
+                    <div class="name-profession">
+                      <span class="name">Someone Name</span>
+                      <span class="profession">Web Developer</span>
+                    </div>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="button">
+                      <button class="aboutMe">About Me</button>
+                      <button class="hireMe">Hire Me</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                    <img src="Screenshot 2024-03-20 232751.png" alt=""> 
+                    </div>
+                    <div class="media-icons">
+                      <i class="fab fa-facebook"></i>
+                      <i class="fab fa-twitter"></i>
+                      <i class="fab fa-github"></i>
+                    </div>
+                    <div class="name-profession">
+                      <span class="name">Someone Name</span>
+                      <span class="profession">Web Developer</span>
+                    </div>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="button">
+                      <button class="aboutMe">About Me</button>
+                      <button class="hireMe">Hire Me</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                     <img src="Screenshot 2024-03-20 232751.png" alt=""> 
+                    </div>
+                    <div class="media-icons">
+                      <i class="fab fa-facebook"></i>
+                      <i class="fab fa-twitter"></i>
+                      <i class="fab fa-github"></i>
+                    </div>
+                    <div class="name-profession">
+                      <span class="name">Someone Name</span>
+                      <span class="profession">Web Developer</span>
+                    </div>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="button">
+                      <button class="aboutMe">About Me</button>
+                      <button class="hireMe">Hire Me</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                   <img src="Screenshot 2024-03-20 232751.png" alt=""> 
+                    </div>
+                    <div class="media-icons">
+                      <i class="fab fa-facebook"></i>
+                      <i class="fab fa-twitter"></i>
+                      <i class="fab fa-github"></i>
+                    </div>
+                    <div class="name-profession">
+                      <span class="name">Someone Name</span>
+                      <span class="profession">Web Developer</span>
+                    </div>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="button">
+                      <button class="aboutMe">About Me</button>
+                      <button class="hireMe">Hire Me</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                    <img src="Screenshot 2024-03-20 232751.png" alt=""> 
+                    </div>
+                    <div class="media-icons">
+                      <i class="fab fa-facebook"></i>
+                      <i class="fab fa-twitter"></i>
+                      <i class="fab fa-github"></i>
+                    </div>
+                    <div class="name-profession">
+                      <span class="name">Someone Name</span>
+                      <span class="profession">Web Developer</span>
+                    </div>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="button">
+                      <button class="aboutMe">About Me</button>
+                      <button class="hireMe">Hire Me</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+          </section>
+          <!-- Swiper JS -->
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              slidesPerView: 3,
+              spaceBetween: 30,
+              slidesPerGroup: 3,
+              loop: true,
+              loopFillGroupWithBlank: true,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
 
   </main>
 
-  <!-- ======= Footer ======= -->
+ 
   <footer id="footer">
 
   </footer><!-- End Footer -->
