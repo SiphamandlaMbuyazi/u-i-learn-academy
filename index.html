@@ -8,7 +8,8 @@
   <title>U&I Learn Academy!</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
+  <!--to bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- Favicons -->
   <link href="logo.png" rel="icon">
   <link href="logo.png" rel="apple-touch-icon">
@@ -25,32 +26,25 @@
 </head>
 
 <body>
-    <nav>
-        <div class="nav-content">
-          <div class="logo">
+  <nav>
+    <div class="nav-content">
+        <div class="logo">
             <img src="logo.png" alt="logo" width="50px" height="50px" style="border-radius: 10px;">
-           
-          </div>
-          <ul class="nav-links">
+        </div>
+        <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#About-Us">About</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#team">Team</a></li>
+            <li><a href="#something">Team</a></li>
             <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <script>
-            let nav = document.querySelector("nav");
-              window.onscroll = function() {
-                if(document.documentElement.scrollTop > 20){
-                  nav.classList.add("sticky");
-                }else {
-                  nav.classList.remove("sticky");
-                }
-              }
-            </script>
-      </nav>
-    <section class="About-Us">
+        </ul>
+        <a href="#" class="mobile-menu">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</nav>
+
+    <div class="About-Us" id="About-Us">
             <div class="hero">
               <h2>Empowering Students to Excel</h2>
               <p>
@@ -62,9 +56,9 @@
             
             </div>
             
-          </section>      
+          </div>      
       
-    <div class="services">
+    <div class="services" id="services">
             <h2 style="text-align: center;">Services we offer</h2>
             <div class="card-list">
               <a href="#" class="card-item">
@@ -101,10 +95,10 @@
             </a>
           </div>
           </div>
-
+          <h2 style="text-align: center;">Meet Our Amazing Team!</h2>
    
-          <section id="something">
-    
+          <div id="something">
+           
             <div class="swiper mySwiper container">
               <div class="swiper-wrapper content">
                 <div class="swiper-slide card">
@@ -355,7 +349,7 @@
             <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
               <div class="swiper-pagination"></div>
-          </section>
+          </div>
           <!-- Swiper JS -->
           <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
           <!-- Initialize Swiper -->
@@ -377,6 +371,13 @@
             });
           </script>
 
+<div id="contact">
+  <h2>You have any questions?</h2>
+  <h1>Contact Form</h1>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdj_6diwYo60OK1MSFFy9VvWbZ8KnHqrDDttxQmikIjOmaTlg/viewform?embedded=true" width="640" height="956" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
+
   </main>
 
  
@@ -384,7 +385,29 @@
 
   </footer><!-- End Footer -->
 
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Sticky navbar on scroll
+let nav = document.querySelector("nav");
+window.onscroll = function() {
+    if(document.documentElement.scrollTop > 20) {
+        nav.classList.add("sticky");
+    } else {
+        nav.classList.remove("sticky");
+    }
+};
+</script>
+
+<script src="script.js"></script>
 
 </body>
 
