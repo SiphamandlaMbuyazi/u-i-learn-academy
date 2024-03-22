@@ -18,3 +18,12 @@ document.addEventListener('DOMContentLoaded', function () {
         // document.getElementById('contact_form').reset();
     });
 });
+// document.addEventListener("DOMContentLoaded", function() {
+//     resetForm();
+// });
+
+// function resetForm() {
+//     // Reset the form fields by setting the iframe's src attribute to the same value
+//     var iframe = document.getElementById('googleForm');
+//     iframe.src = iframe.src;
+// }
